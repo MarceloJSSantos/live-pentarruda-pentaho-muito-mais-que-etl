@@ -14,11 +14,11 @@ TIPOS DE TOPOLOGIA
 
 - Star Schema
 
-  ![star-schema](.\img\star-schema.png)
+  ![star-schema](./img/star-schema.png)
 
 - SnowFlake Schema
 
-  ![Snowflake-schema](.\img\Snowflake-schema.png)
+  ![Snowflake-schema](./img/Snowflake-schema.png)
 
 Tabelas
 
@@ -34,7 +34,7 @@ ETL (Extract, Transform e Load)
 - Transformação: adequação dos dados extraídos e
 - Carga: dos dados após as etapas anteriores no DW
 
-![etl](.\img\etl.png)
+![etl](./img/etl.png)
 
 
 
@@ -67,7 +67,7 @@ Pentaho Data Integration (PDI)
 
   Objetivo: ler um arquivo csv, ordena, agrupa os valores de acordo com uma coluna e cria outro arquivo.
 
-  ![esquema do exemplo 1](.\img\exemplo_1_esquema.png)
+  ![esquema do exemplo 1](./img/exemplo_1_esquema.png)
 
 
 
@@ -75,7 +75,7 @@ Pentaho Data Integration (PDI)
 
   Objetivo: ler dados de 4 tabelas, ordena, junta e trata e limpa e gravar em uma área (stage) no DW
 
-  ![esquema do exemplo 2](.\img\exemplo_2_esquema.png)
+  ![esquema do exemplo 2](./img/exemplo_2_esquema.png)
 
   
 
@@ -83,11 +83,11 @@ Pentaho Data Integration (PDI)
 
   Objetivo A: Carga full (limpa a tabela e carrega os dados)
 
-  ![esquema do exemplo 3A](.\img\exemplo_3A_esquema.png)
+  ![esquema do exemplo 3A](./img/exemplo_3A_esquema.png)
 
   Objeto B: Carga incremental (compara os dados novos com os já existentes, caso seja novo, **inclui**, caso exista, **atualiza**)
 
-  ![esquema do exemplo 3B](.\img\exemplo_3B_esquema.png)
+  ![esquema do exemplo 3B](./img/exemplo_3B_esquema.png)
 
 
 
@@ -95,7 +95,7 @@ Pentaho Data Integration (PDI)
 
   Objetivo: Ler dados de uma API (estados do IBGE) e após diversas transformações salvar um arquivo com os dados
 
-   ![esquema do exemplo 4](.\img\exemplo_4_esquema.png)
+   ![esquema do exemplo 4](./img/exemplo_4_esquema.png)
 
 
 
@@ -103,7 +103,7 @@ Pentaho Data Integration (PDI)
 
   Objetivo: Criar um job que executa diversas transformações, com mensagem em caso de erro no processo
 
-  ![esquema do exemplo 5](.\img\exemplo_5_esquema.png)
+  ![esquema do exemplo 5](./img/exemplo_5_esquema.png)
 
 
 
@@ -183,7 +183,7 @@ nota: Foram utilizados os scripts do BD northwind para MySQL de https://github.c
 
       
 
-  ![Step "String operations"](.\img\cap_String_operations_1.png)
+  ![Step "String operations"](./img/cap_String_operations_1.png)
 
   
 
@@ -222,7 +222,7 @@ nota: Foram utilizados os scripts do BD northwind para MySQL de https://github.c
   - Substituímos o 'custormer_id' da tabela 'Orders' por 'company' em 'Custormers'
   - renomeamos a coluna 'company' para 'customer_name'
 
-  ![Step "Database lookup"](.\img\cap_Database_lookup_1.png)
+  ![Step "Database lookup"](./img/cap_Database_lookup_1.png)
 
 - Step "Database lookup"
 
@@ -244,7 +244,7 @@ nota: Foram utilizados os scripts do BD northwind para MySQL de https://github.c
 - Step "Calculator": Efetua cálculos pré- definidos (coluna cálculo)
   - calculamos 'qt_dias_envio'='shipped_date'-'order_date'
   - calculamos 'valor_total'='quantity'*'unit_price'
-- ![Step "Calculator"](.\img\cap_Calculator.png)
+- ![Step "Calculator"](./img/cap_Calculator.png)
 
 - Step "Number range": retorna um valor em função de intervalos de um campo
   - Para valores de até 10 da coluna 'qt_dias_envio', retorna "DENTRO SLA"
@@ -252,7 +252,7 @@ nota: Foram utilizados os scripts do BD northwind para MySQL de https://github.c
   - Para valores fora desses intervalos ou null, retorna "N/E"
 
 - Step "Switch / case": Seleciona os registros de acordo com os valores de um campo
-  ![Step "Switch / case"](.\img\cap_Switch_case.png)
+  ![Step "Switch / case"](./img/cap_Switch_case.png)
 
 - Step "Microsoft Excel writer": Cria um arquivo Excel de acordo com parâmetros definidos
   - cria os arquivos Excel:
