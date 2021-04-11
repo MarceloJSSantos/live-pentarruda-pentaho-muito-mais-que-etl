@@ -7,6 +7,8 @@
 - Arquivos
   - [Script de criação do BD northwind](./arquivos/northwind_timestamp.sql)
   - [Script de carga do BD northwind](./arquivos/northwind_data_ajuste_enderecos.sql) (com os endereços ajustados)
+  - [job-arquivos-SLA.ktr](./arquivos/job-arquivos-SLA.ktr)
+  - [job-arquivos-SLA.kjb](./arquivos/job-arquivos-SLA.kjb)
 
 
 
@@ -152,6 +154,8 @@ nota: Foram utilizados os scripts do BD northwind para MySQL de https://github.c
 
 
 
+**TRANSFORMATION**
+
 - Step "Table input"
 
   - configurado a conexão c/ o banco de dados
@@ -260,153 +264,23 @@ nota: Foram utilizados os scripts do BD northwind para MySQL de https://github.c
     - fora-sla_20210407.xlsx
     - nao-entregues_sla_20210407.xlsx
 
-
-
-Parado no e-mail vídeo: 01:41:00
+![Transformation](./img/cap_transformation.png)
 
 
 
-```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+**JOB**
 
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="telephone=no" name="format-detection">
-    <title></title>
-    <!--[if (mso 16)]>
-    <style type="text/css">
-    a {text-decoration: none;}
-    </style>
-    <![endif]-->
-    <!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]-->
-    <!--[if gte mso 9]>
-<xml>
-    <o:OfficeDocumentSettings>
-    <o:AllowPNG></o:AllowPNG>
-    <o:PixelsPerInch>96</o:PixelsPerInch>
-    </o:OfficeDocumentSettings>
-</xml>
-<![endif]-->
-</head>
+- Step "Start": Inicia o Job
 
-<body>
-    <div class="es-wrapper-color">
-        <!--[if gte mso 9]>
-			<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-				<v:fill type="tile" color="#ffffff"></v:fill>
-			</v:background>
-		<![endif]-->
-        <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0">
-            <tbody>
-                <tr>
-                    <td class="esd-email-paddings" valign="top">
-                        <table class="es-content esd-header-popover" cellspacing="0" cellpadding="0" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe" esd-custom-block-id="5449" align="center">
-                                        <table class="es-content-body" style="border-left:1px solid #836027;border-right:1px solid #836027;border-top:1px solid #836027;border-bottom:1px solid #836027;background-color: transparent;" width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure" style="background-color: #ffffff;" bgcolor="#ffffff" align="left">
-                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="esd-container-frame" width="598" valign="top" align="center">
-                                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td class="esd-block-image es-p5t es-p10r es-p10l" align="center" style="font-size:0"><a target="_blank"><img class="adapt-img" src="https://tlr.stripocdn.email/content/guids/CABINET_ea97118f59193813e3046bb79941ffee/images/89951526643846833.png" alt style="display: block;" width="578"></a></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="es-content" cellspacing="0" cellpadding="0" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe" esd-custom-block-id="5451" align="center">
-                                        <table class="es-content-body" style="border-left: 1px solid #836027; border-right: 1px solid #836027; background-color: transparent;" width="600" cellspacing="0" cellpadding="0" align="center">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure es-p20r es-p20l" align="left">
-                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="esd-container-frame" width="558" valign="top" align="center">
-                                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td class="esd-block-text es-m-txt-c es-p15t es-p10b" align="left">
-                                                                                        <p>Oi,&nbsp;</p>
-                                                                                        <p>Segue os arquivos como de praxe.<br><br>Marcelo Santos</p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="es-content esd-footer-popover" cellspacing="0" cellpadding="0" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe" esd-custom-block-id="5449" align="center">
-                                        <table class="es-content-body" style="border-left:1px solid #836027;border-right:1px solid #836027;border-top:1px solid #836027;border-bottom:1px solid #836027;background-color: transparent;" width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure" style="background-color: #ffffff;" bgcolor="#ffffff" align="left">
-                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="esd-container-frame" width="598" valign="top" align="center">
-                                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td class="esd-block-image es-p5t es-p10r es-p10l" align="center" style="font-size:0"><a target="_blank"><img class="adapt-img" src="https://tlr.stripocdn.email/content/guids/CABINET_ea97118f59193813e3046bb79941ffee/images/89951526643846833.png" alt style="display: block;" width="578"></a></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</body>
+- Step "Transformation" Acrescenta uma transformação no fluxo do job
+  - ${Internal.Entry.Current.Directory}/pratica.ktr
+- Step "Mail": Encaminha um e-mail
+  - Caso haja algum problema com a transformação
+- Step "Sucess":
+- Step "Mail"
+  - Caso seja bem sucessido o job, encaminha um e-mail com os arquivos gerados
+- Step "Move files": move arquivos/pastas
+  - após o envio do e-mail, move os arquivos processados para uma pasta de arquivos enviados.
 
-</html>
-```
+![Job](./img/cap_job.png)
 
