@@ -7,7 +7,7 @@
 - Arquivos
   - [Script de criação do BD northwind](./arquivos/northwind_timestamp.sql)
   - [Script de carga do BD northwind](./arquivos/northwind_data_ajuste_enderecos.sql) (com os endereços ajustados)
-  - [job-arquivos-SLA.ktr](./arquivos/job-arquivos-SLA.ktr)
+  - [transf-arquivos-SLA.ktr](./arquivos/transf-arquivos-SLA.ktr)
   - [job-arquivos-SLA.kjb](./arquivos/job-arquivos-SLA.kjb)
 
 
@@ -65,11 +65,19 @@ Pentaho Data Integration (PDI)
 
 
 
-- Exemplo 1: Trabalhando com arquivos (fazer depois)
+- Exemplo 1: Trabalhando com arquivos
 
   Objetivo: ler um arquivo csv, ordena, agrupa os valores de acordo com uma coluna e cria outro arquivo.
 
-  ![esquema do exemplo 1](./img/exemplo_1_esquema.png)
+  - solução: 
+    - [exemplo-1.ktr](./arquivos/exemplo-1/exemplo-1.ktr)
+    - [vendas.csv](./arquivos/exemplo-1/vendas.csv)
+    - [vendas_agrupada_pais-ano-mes.csv](./arquivos/exemplo-1/vendas_agrupada_pais-ano-mes.csv)
+    - [vendas_agrupada_pais-dia_semana.csv](./arquivos/exemplo-1/vendas_agrupada_pais-dia_semana.csv)
+
+  
+
+  ![esquema do exemplo 1](./img/cap_solucao_exemplo-1.png)
 
 
 

@@ -1,0 +1,36 @@
+pais;dia_semana;valor_venda_total
+ARGENTINA;domingo;287.189,53
+ARGENTINA;quarta;285.944,93
+ARGENTINA;quinta;288.559,00
+ARGENTINA;segunda;282.027,41
+ARGENTINA;sexta;300.494,65
+ARGENTINA;sábado;281.110,58
+ARGENTINA;terça;295.833,15
+BRASIL   ;domingo;277.775,80
+BRASIL   ;quarta;288.844,87
+BRASIL   ;quinta;276.110,41
+BRASIL   ;segunda;275.749,72
+BRASIL   ;sexta;300.589,73
+BRASIL   ;sábado;278.759,10
+BRASIL   ;terça;297.705,17
+CHILE    ;domingo;294.419,82
+CHILE    ;quarta;254.433,28
+CHILE    ;quinta;276.404,57
+CHILE    ;segunda;292.566,03
+CHILE    ;sexta;289.105,47
+CHILE    ;sábado;265.329,34
+CHILE    ;terça;287.595,10
+ESPANHA  ;domingo;318.668,13
+ESPANHA  ;quarta;283.666,98
+ESPANHA  ;quinta;296.627,00
+ESPANHA  ;segunda;268.885,79
+ESPANHA  ;sexta;282.443,01
+ESPANHA  ;sábado;272.947,58
+ESPANHA  ;terça;290.915,57
+MÉXICO   ;domingo;309.320,17
+MÉXICO   ;quarta;271.667,99
+MÉXICO   ;quinta;278.125,55
+MÉXICO   ;segunda;281.630,04
+MÉXICO   ;sexta;286.808,24
+MÉXICO   ;sábado;306.735,74
+MÉXICO   ;terça;282.597,10
