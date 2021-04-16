@@ -81,9 +81,13 @@ Pentaho Data Integration (PDI)
 
 
 
-- Exemplo 2: Criar uma Stage no DW (fazer depois)
+- Exemplo 2: Criar uma Stage no DW
 
-  Objetivo: ler dados de 4 tabelas, ordena, junta e trata e limpa e gravar em uma área (stage) no DW
+  Objetivo: ler dados de algumas tabelas, ordena, junta e trata e limpa e gravar em uma tabela-temporária (stage) no DW
+
+  - solução: 
+    - [exemplo-2.ktr](./arquivos/exemplo-2/exemplo-2.ktr)
+    - [bd_transacional.sql](./arquivos/exemplo-2/bd_transacional.sql) (para popular o BD)
 
   ![esquema do exemplo 2](./img/exemplo_2_esquema.png)
 
